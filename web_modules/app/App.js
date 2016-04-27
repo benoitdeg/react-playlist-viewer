@@ -27,8 +27,8 @@ export default class App extends Component {
 
     return (
       <div>
-      <List items={artists} type=1/>
-      <List items={kindsArray} type=0 />
+      <List items={artists}/>
+      <List items={kindsArray} />
       </div>
     );
 
