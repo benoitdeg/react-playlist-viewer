@@ -8,7 +8,7 @@ import React, { Component } from 'react';
    render() {
      return (
        <li className="itemArtist">
-       {this.props.name}
+          {this.props.name}
        </li>
      );
    }

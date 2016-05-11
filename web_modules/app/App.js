@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Artist from 'Artist'
 import Kinds from 'Kinds'
 import List from 'List'
+import Input from 'Input'
 
 const artists = [
   {name:"Bob Marley"},
@@ -16,6 +17,8 @@ const kinds = {
   electro:{name:"Electro"},
 }
 
+const inputName = ["searchUser"]
+
 const kindsArray = Object.keys(kinds).map((k) => {
   return kinds[k]
 });
@@ -23,12 +26,14 @@ const kindsArray = Object.keys(kinds).map((k) => {
 export default class App extends Component {
 
   render() {
-
-
     return (
       <div>
-      <List items={artists}/>
-      <List items={kindsArray} />
+        <div id="artists">
+            <List items={artists}/>
+        </div>
+        <div id="kinds">
+            <List items={kindsArray} />
+        </div>
       </div>
     );
 
